@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+
+# Build output
+.build/
+dist/
+dist-*/
+*.app/
+*.zip
+*.dmg
+
+# Local-only working files
+_archive/
+
+# Screenshots stay out of git, except the ones the README uses
+*.png
+!docs/**/*.png
+
+# Never commit real sign-in data or backups
+Cookies*
+*.binarycookies
+manifest.json
