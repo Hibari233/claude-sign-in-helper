@@ -8,7 +8,9 @@
 
 将同一台 Mac 上 Safari 现有的 Claude 登录导入官方 Claude Desktop。所有处理都在本机完成，每次导入前自动备份。
 
-[**下载 macOS 版本**](https://github.com/hibari233/claude-sign-in-helper/releases/latest) · [English](README.md)
+[**下载 macOS 版本**](https://github.com/hibari233/claude-sign-in-helper/releases/latest)
+
+[English](README.md)
 
 macOS 13 Ventura 及以上 · Apple Silicon / Intel 通用版本 · MIT 开源
 
@@ -16,8 +18,6 @@ macOS 13 Ventura 及以上 · Apple Silicon / Intel 通用版本 · MIT 开源
   <source media="(prefers-color-scheme: dark)" srcset="docs/demo/walkthrough-zh-CN-dark.gif">
   <img src="docs/demo/walkthrough-zh-CN-light.gif" width="440" alt="20 秒界面流程演示：检查这台 Mac、导入 Safari 已有登录、打开 Claude Desktop、确认登录。使用示例数据。">
 </picture>
-
-<sub>20 秒界面流程演示，使用示例数据。实际导入可能需要更多时间，并出现 macOS 授权提示。</sub>
 
 </div>
 

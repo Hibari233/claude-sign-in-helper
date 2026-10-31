@@ -8,7 +8,9 @@
 
 Bring your existing Safari sign-in into the official Claude Desktop app on the same Mac. Everything runs locally, with a backup before each import.
 
-[**Download for macOS**](https://github.com/hibari233/claude-sign-in-helper/releases/latest) · [简体中文](README.zh-CN.md)
+[**Download for macOS**](https://github.com/hibari233/claude-sign-in-helper/releases/latest)
+
+[简体中文](README.zh-CN.md)
 
 [![macOS 13+](https://img.shields.io/badge/macOS-13%2B-1d1d1f?logo=apple&logoColor=white)](#requirements)
 [![Universal](https://img.shields.io/badge/universal-Apple%20silicon%20%2B%20Intel-555555)](#requirements)
@@ -22,8 +24,6 @@ Bring your existing Safari sign-in into the official Claude Desktop app on the s
   <source media="(prefers-color-scheme: dark)" srcset="docs/demo/walkthrough-en-dark.gif">
   <img src="docs/demo/walkthrough-en-light.gif" width="440" alt="20-second interface walkthrough: check this Mac, import the existing Safari sign-in, open Claude Desktop, and verify sign-in. Demonstration data.">
 </picture>
-
-<sub>20-second UI walkthrough with demonstration data. Real imports may take longer and show macOS permission prompts.</sub>
 
 </div>
 
