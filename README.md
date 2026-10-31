@@ -1,12 +1,14 @@
 <div align="center">
 
-<img src="docs/icon.png" width="128" height="128" alt="Claude Sign-In Helper app icon">
+<img src="docs/icon.png" width="96" height="96" alt="Claude Sign-In Helper app icon">
 
 # Claude Sign-In Helper
 
-**Bring the Claude sign-in you already have in Safari to the Claude Desktop app.**
+**A macOS login helper for when Claude works in Safari but Claude Desktop won’t sign in.**
 
-A tiny, native macOS utility for when Claude works in Safari, but the Desktop app can't finish signing in.
+Bring your existing Safari sign-in into the official Claude Desktop app on the same Mac. Everything runs locally, with a backup before each import.
+
+[**Download for macOS**](https://github.com/hibari233/claude-sign-in-helper/releases/latest) · [简体中文](README.zh-CN.md)
 
 [![macOS 13+](https://img.shields.io/badge/macOS-13%2B-1d1d1f?logo=apple&logoColor=white)](#requirements)
 [![Universal](https://img.shields.io/badge/universal-Apple%20silicon%20%2B%20Intel-555555)](#requirements)
@@ -14,14 +16,14 @@ A tiny, native macOS utility for when Claude works in Safari, but the Desktop ap
 [![License: MIT](https://img.shields.io/badge/license-MIT-3a7bd5)](LICENSE)
 [![Latest release](https://img.shields.io/github/v/release/hibari233/claude-sign-in-helper?color=C15F3C&label=release)](https://github.com/hibari233/claude-sign-in-helper/releases/latest)
 
-[Download](#download) · [How to use](#how-to-use) · [Privacy & safety](#privacy--safety) · [FAQ](#faq) · [Build from source](#build-from-source)
-
-<br>
+[Installation](#download) · [How to use](#how-to-use) · [Privacy & safety](#privacy--safety) · [FAQ](#faq) · [Build from source](#build-from-source)
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="docs/screenshots/hero-dark.png">
-  <img src="docs/screenshots/hero-light.png" width="880" alt="Claude Sign-In Helper's three main screens: Check this Mac, Ready to import, and Sign-in confirmed">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/demo/walkthrough-en-dark.gif">
+  <img src="docs/demo/walkthrough-en-light.gif" width="440" alt="20-second interface walkthrough: check this Mac, import the existing Safari sign-in, open Claude Desktop, and verify sign-in. Demonstration data.">
 </picture>
+
+<sub>20-second UI walkthrough with demonstration data. Real imports may take longer and show macOS permission prompts.</sub>
 
 </div>
 
@@ -195,6 +197,8 @@ This is a **preview** (0.3.0). The transfer method has worked on a real Intel Ma
 ## Contributing
 
 Issues and pull requests are welcome, especially testing on Apple silicon and new translations. Please read [CONTRIBUTING.md](CONTRIBUTING.md) first.
+
+If this helped you sign in, consider starring the repository or sharing your experience in an issue.
 
 > [!CAUTION]
 > Never post cookie values, session keys, tokens, Keychain passwords, backups, or raw logs in an issue. To report a security problem, follow [SECURITY.md](SECURITY.md).
