@@ -89,7 +89,7 @@ It works entirely on your Mac. It doesn't create a new sign-in, it can't recover
 - Writes in one SQLite transaction, verifies the result, and rolls back on any failure.
 - Refuses symbolic links, files owned by another account, unfamiliar database schemas, and ambiguous or expired sessions, and stops without changing anything.
 - Shows only redacted errors: no raw logs or credentials.
-- Covered by 31 self-tests that use only fabricated credentials and temporary files.
+- Covered by 32 self-tests that use only fabricated credentials and temporary files.
 
 </details>
 
@@ -139,7 +139,13 @@ Safari keeps its cookies in a protected location. macOS only lets an app read th
 <details>
 <summary><b>Why does macOS ask about "Claude Safe Storage"?</b></summary>
 
-Claude Desktop encrypts its cookies with a key stored in your Keychain under that name. The helper needs it to write your session in Desktop's format. Choose **Allow**. If macOS asks for a password, it's your Mac login password, typed into macOS's own dialog. The helper has no password field.
+Claude Desktop encrypts its cookies with a key stored in your Keychain under that name. The helper needs it to write your session in Desktop's format.
+
+macOS may ask **twice**, with slightly different wording. On the tested M4 Pro, the prompts concerned using confidential information and accessing the key. The helper makes a single Keychain read; multiple prompts can come from macOS checking the item's access permissions. Choose **Allow** for each prompt.
+
+Choosing **Always Allow** grants ongoing access to that item. This build of the helper may then read it again without asking; the number of prompts can vary with your macOS and Keychain settings. If you're not sure, choose **Allow**.
+
+If macOS asks for a password, it's your Mac login password, typed into macOS's own dialog. The helper has no password field.
 
 </details>
 
@@ -161,6 +167,12 @@ No. It only copies a sign-in that already works in Safari on the same Mac. A sig
 
 You need Apple's Command Line Tools (`xcode-select --install`) or Xcode. There are no packages to install.
 
+With Command Line Tools 27 and its macOS 27 SDK, the build fails with `plugin for module 'SwiftUIMacros' not found`. Build against the macOS 26.5 SDK that ships alongside it instead:
+
+```bash
+SDKROOT=/Library/Developer/CommandLineTools/SDKs/MacOSX26.5.sdk ./build.sh
+```
+
 ```bash
 git clone https://github.com/hibari233/claude-sign-in-helper.git
 cd claude-sign-in-helper
@@ -178,7 +190,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the project layout, the preview rende
 
 ## Project status
 
-This is a **preview** (0.3.0). The transfer method has worked on a real Intel Mac, and the native app's import and restore engine is covered by 31 self-tests that use synthetic data. The universal build includes Apple silicon, but that hasn't been independently tested yet, and neither has the native app's interactive Keychain prompt. Reports are very welcome. See [CHANGELOG.md](CHANGELOG.md) for what's new.
+This is a **preview** (0.3.0). The transfer method has worked on a real Intel Mac, and the native app's import and restore engine is covered by 32 self-tests that use synthetic data. The universal build has also been tested on an Apple silicon Mac (M4 Pro, macOS 27), including a real import through the native app and its Keychain prompts; see the [test report](docs/testing/apple-silicon-m4-macos27.md). Reports from other Macs are very welcome. See [CHANGELOG.md](CHANGELOG.md) for what's new.
 
 ## Contributing
 

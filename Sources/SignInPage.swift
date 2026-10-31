@@ -89,7 +89,7 @@ struct SignInView: View {
         case .verified:
             return String(localized: "Claude Desktop reported a successful sign-in. Check that it shows the account you expect.")
         case .unconfirmed:
-            return String(localized: "Claude may still be loading, or it may ask you to sign in again. If needed, you can undo the import in Backups.")
+            return String(localized: "Claude may still be loading. If it asks you to sign in, sign out of Claude in Safari and back in, then import again.")
         }
     }
 
@@ -146,7 +146,7 @@ struct SignInView: View {
         case .ready, .existing: return [Action(title: String(localized: "Check again")) { model.check() }]
         case .imported:
             return [model.claudeOpened ? Action(title: String(localized: "Open Claude")) { model.openClaude() } : Action(title: String(localized: "Verify sign-in")) { model.verify() }]
-        case .unconfirmed: return [Action(title: String(localized: "Open Claude")) { model.openClaude() }, Action(title: String(localized: "Backups")) { model.present(.backups) }]
+        case .unconfirmed: return [Action(title: String(localized: "Open Claude")) { model.openClaude() }]
         default: return []
         }
     }
