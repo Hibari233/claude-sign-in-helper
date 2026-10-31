@@ -11,7 +11,7 @@ struct HelpSheet: View {
             // with a fade at the bottom edge so the cut-off text reads as "scroll for more".
             ViewThatFits(in: .vertical) {
                 content
-                ScrollView { content }
+                ScrollView { content.padding(.bottom, 28) }
                     .scrollIndicators(.visible)
                     .overlay(alignment: .bottom) {
                         LinearGradient(colors: [Palette.canvas.opacity(0), Palette.canvas], startPoint: .top, endPoint: .bottom)
@@ -41,7 +41,7 @@ struct HelpSheet: View {
                     VStack(alignment: .leading, spacing: 6) { accessButtons }
                 }
             }
-            item("The Keychain prompt", "macOS asks twice about “Claude Safe Storage,” Claude Desktop’s key. Choose Allow both times (Always Allow asks once, but is permanent).")
+            item("The Keychain prompt", "macOS may ask twice about Claude Desktop’s “Claude Safe Storage” key. Choose Allow each time. Always Allow permits future access without asking.")
             item("Privacy", "Runs only on this Mac, with no network requests. Reads only Claude’s sign-in cookies; Safari isn’t changed.")
             item("Limits", "Independent utility. Safari’s default profile and one Claude session only.")
         }

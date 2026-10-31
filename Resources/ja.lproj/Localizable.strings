@@ -64,7 +64,7 @@
 "If macOS blocks access" = "macOSにアクセスを拒否された場合";
 "Allow this app in Privacy & Security → Full Disk Access, then reopen it. Only do this if you trust it." = "「プライバシーとセキュリティ」→「フルディスクアクセス」でこのアプリを許可し、開き直してください。このアプリを信頼できる場合にのみ行ってください。";
 "The Keychain prompt" = "キーチェーンの確認";
-"macOS asks twice about “Claude Safe Storage,” Claude Desktop’s key. Choose Allow both times (Always Allow asks once, but is permanent)." = "macOSはClaude Desktopのキー「Claude Safe Storage」について2回確認します。2回とも「許可」を選んでください（「常に許可」なら1回で済みますが、許可がずっと残ります）。";
+"macOS may ask twice about Claude Desktop’s “Claude Safe Storage” key. Choose Allow each time. Always Allow permits future access without asking." = "macOSがClaude Desktopのキー「Claude Safe Storage」について2回確認する場合があります。その都度「許可」を選んでください。「常に許可」を選ぶと、今後は確認なしでアクセスできるようになります。";
 "Privacy" = "プライバシー";
 "Runs only on this Mac, with no network requests. Reads only Claude’s sign-in cookies; Safari isn’t changed." = "このMac上だけで動作し、ネットワーク通信は行いません。読み取るのはClaudeのサインイン用Cookieだけで、Safariは変更しません。";
 "Limits" = "制限事項";

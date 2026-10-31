@@ -64,7 +64,7 @@
 "If macOS blocks access" = "Si macOS bloque l’accès";
 "Allow this app in Privacy & Security → Full Disk Access, then reopen it. Only do this if you trust it." = "Autorisez cette app dans Confidentialité et sécurité → Accès complet au disque, puis rouvrez-la. Ne le faites que si vous lui faites confiance.";
 "The Keychain prompt" = "La demande du trousseau";
-"macOS asks twice about “Claude Safe Storage,” Claude Desktop’s key. Choose Allow both times (Always Allow asks once, but is permanent)." = "macOS pose deux fois la question au sujet de « Claude Safe Storage », la clé de Claude Desktop. Choisissez Autoriser les deux fois (« Toujours autoriser » ne la pose qu’une fois, mais c’est permanent).";
+"macOS may ask twice about Claude Desktop’s “Claude Safe Storage” key. Choose Allow each time. Always Allow permits future access without asking." = "macOS peut vous interroger deux fois au sujet de la clé « Claude Safe Storage » de Claude Desktop. Choisissez Autoriser à chaque demande. « Toujours autoriser » permet les accès futurs sans confirmation.";
 "Privacy" = "Confidentialité";
 "Runs only on this Mac, with no network requests. Reads only Claude’s sign-in cookies; Safari isn’t changed." = "Fonctionne uniquement sur ce Mac, sans aucune requête réseau. Seuls les cookies de connexion de Claude sont lus ; Safari n’est pas modifié.";
 "Limits" = "Limites";

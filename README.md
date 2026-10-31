@@ -141,9 +141,9 @@ Safari keeps its cookies in a protected location. macOS only lets an app read th
 
 Claude Desktop encrypts its cookies with a key stored in your Keychain under that name. The helper needs it to write your session in Desktop's format.
 
-macOS usually asks **twice**, with slightly different wording: first that the helper "wants to use your confidential information stored in 'Claude Safe Storage'," then that it "wants to access key 'Claude Safe Storage'." The helper reads the key only once. The two prompts come from two separate Keychain checks: the key belongs to Claude Desktop, and only Claude Desktop, signed by Anthropic, may read it without asking. The helper passes neither check, so macOS asks about each one. Choose **Allow** both times.
+macOS may ask **twice**, with slightly different wording. On the tested M4 Pro, the prompts concerned using confidential information and accessing the key. The helper makes a single Keychain read; multiple prompts can come from macOS checking the item's access permissions. Choose **Allow** for each prompt.
 
-If you choose **Always Allow** on the first prompt, macOS skips the second one. But that permission stays: this build of the helper could read the key again later without asking. If you're not sure, choose **Allow**.
+Choosing **Always Allow** grants ongoing access to that item. This build of the helper may then read it again without asking; the number of prompts can vary with your macOS and Keychain settings. If you're not sure, choose **Allow**.
 
 If macOS asks for a password, it's your Mac login password, typed into macOS's own dialog. The helper has no password field.
 
